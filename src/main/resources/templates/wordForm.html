@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Game</title>
+    <link href="/game.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+<form action="/word" method="post">
+    <label for="level">Select Level:</label>
+    <select name="selectedLevel" id="level">
+        <option th:each="level : ${levels}" th:value="${level}"
+                th:text="${level}"></option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+</div>
+
+</body>
+</html>

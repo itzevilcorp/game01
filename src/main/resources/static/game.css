@@ -1,0 +1,79 @@
+/* Reset some default styles */
+body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Dark background color for dark mode */
+    color: #fff; /* Light text color for dark mode */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #fff; /* Light text color for dark mode */
+}
+
+form {
+    background-color: #333; /* Dark background color for dark mode */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff; /* Light text color for dark mode */
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #555; /* Darker border color for dark mode */
+    border-radius: 4px;
+    background-color: #444; /* Dark background color for input fields in dark mode */
+    color: #fff; /* Light text color for input fields in dark mode */
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.message {
+    color: #ff5252; /* Lighter red color for dark mode */
+    margin-top: 15px;
+}
+
+.hints {
+    color: #4caf50; /* Green color for hints in dark mode */
+    margin-bottom: 15px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}

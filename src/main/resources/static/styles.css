@@ -1,0 +1,64 @@
+/* Navbar styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Additional styling for Navbar links */
+nav a {
+    margin: 0 10px; /* Adjust the spacing between Navbar links */
+}
+
+/* Styling for Home link */
+nav #home-link {
+    margin-left: 20px; /* Adjust the margin for the Home link */
+}
+
+/* Background Image styles */
+.background-image {
+    background-image: url('/neon.jpg'); /* Reference the image in the static folder */
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Content Sections styles */
+section {
+    padding: 50px;
+    color: white;
+    margin-top: 60px;
+}
+
+/* General styling */
+body {
+    margin: 0; /* Remove default body margin */
+}
+
+/* Reset default padding and margin for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
